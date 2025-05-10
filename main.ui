@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>app</class>
+ <widget class="QMainWindow" name="app">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>app</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::TabShape::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,10,0">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Ravie</family>
+           <pointsize>22</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);
+background-color: rgb(0, 0, 127);</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;WEB HOSTER&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="mainTabStac">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 18pt &quot;Rockwell&quot;;</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="filesTab">
+          <attribute name="title">
+           <string>files</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="cursor" stdset="0">
+              <cursorShape>CrossCursor</cursorShape>
+             </property>
+             <property name="mouseTracking">
+              <bool>true</bool>
+             </property>
+             <property name="tabletTracking">
+              <bool>true</bool>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="fileBtnFrame">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>756</width>
+                <height>364</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="importFilesBtn">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777211</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Elephant</family>
+               <pointsize>22</pointsize>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+font: 22pt &quot;Elephant&quot;;
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0833333 rgba(0, 170, 255, 255), stop:0.288889 rgba(0, 255, 255, 255), stop:0.488889 rgba(0, 255, 127, 255), stop:0.711111 rgba(85, 255, 255, 255), stop:0.9 rgba(0, 170, 255, 255));
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.0558659 rgba(3, 81, 119, 255), stop:0.217877 rgba(25, 109, 150, 255), stop:0.446927 rgba(0, 85, 127, 255), stop:0.787709 rgba(0, 0, 127, 255), stop:1 rgba(0, 0, 0, 255));
+}
+
+QPushButton::hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.0558659 rgba(3, 81, 119, 255), stop:0.217877 rgba(25, 109, 150, 255), stop:0.446927 rgba(0, 85, 127, 255), stop:0.787709 rgba(0, 0, 127, 255), stop:1 rgba(0, 0, 0, 255));
+	color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0833333 rgba(0, 170, 255, 255), stop:0.288889 rgba(0, 255, 255, 255), stop:0.488889 rgba(0, 255, 127, 255), stop:0.711111 rgba(85, 255, 255, 255), stop:0.9 rgba(0, 170, 255, 255));
+}</string>
+             </property>
+             <property name="text">
+              <string>Import Files</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Networktab">
+          <attribute name="title">
+           <string>Network</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPlainTextEdit" name="terminal">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>13</pointsize>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor" stdset="0">
+              <cursorShape>IBeamCursor</cursorShape>
+             </property>
+             <property name="mouseTracking">
+              <bool>true</bool>
+             </property>
+             <property name="tabletTracking">
+              <bool>true</bool>
+             </property>
+             <property name="whatsThis">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 0);
+font: 13pt &quot;Segoe UI&quot;;</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="plainText">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="startServerBtn">
+      <property name="font">
+       <font>
+        <family>Ravie</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Start Server...</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::MediaPlaybackStart">
+        <normalon>../../../Pictures/icons/bnb_crypto_icon_264371.ico</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
